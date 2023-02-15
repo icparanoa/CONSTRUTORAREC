@@ -63,10 +63,19 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   position: relative;
   color: #2e3135;
+}
+
+@media (min-width: 1199px) {
+  .section-header h2 {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    color: #2e3135;
+  }
 }
 
 .section-header h2:before,
@@ -1820,21 +1829,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Footer
+# Footer #DADADB
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background-image: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
+  background: #DADADB;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
-}
-
-#footer .footer-top::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  inset: 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1843,11 +1846,11 @@ section {
 }
 
 #footer .footer-top .footer-info a {
-  color: #ffffff;
+  color: #000000;
 }
 
 #footer .footer-top .footer-info a:hover {
-  color: #1E376A;
+  color: #2DA8CA;
   text-decoration: none;
 }
 
@@ -1860,55 +1863,47 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  color: #000000;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Constan", sans-serif;
 }
 
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-  color: #fff;
-  background: #1E376A;
-  text-decoration: none;
-}
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #000000;
   position: relative;
   padding-bottom: 12px;
 }
 
 #footer .copyright {
+  color: #000000;
   border-top: 1px solid #000000;
   text-align: center;
   padding-top: 30px;
 }
 
 #footer .credits {
+  color: #000000;
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
 }
 
+#footer .credits a {
+  color: #000000;
+}
+
+#footer .credits a:hover {
+  color: #2DA8CA;
+}
+
+
 #footer .logo img {
-  max-height: 250px;
+  max-height: 255px;
 }
 
 @media (max-width: 575px) {
