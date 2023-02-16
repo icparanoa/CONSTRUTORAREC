@@ -267,6 +267,19 @@ section {
   margin-right: 1px;
 }
 
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+}
+
+.header .logo h1 span {
+  color: var(--color-primary);
+}
+
+
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
