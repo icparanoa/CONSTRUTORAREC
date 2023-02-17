@@ -1184,87 +1184,6 @@ section {
   font-family: var(--font-primary);
   font-size: 14px;
 }
-
-/*--------------------------------------------------------------
-# Our Team Section
---------------------------------------------------------------*/
-.team .member {
-  position: relative;
-}
-
-.team .member .member-img {
-  margin: 0 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-@media (max-width: 1024px) {
-  .team .member .member-img {
-    margin: 0 60px;
-  }
-}
-
-.team .member .member-img img {
-  position: relative;
-  z-index: 1;
-}
-
-.team .member .member-img .social {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  padding-bottom: 20px;
-  transition: 0.3s;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.team .member .member-img .social a {
-  transition: 0.3s;
-  color: #fff;
-  font-size: 20px;
-  margin: 0 8px;
-}
-
-.team .member .member-img .social a:hover {
-  color: var(--color-primary);
-}
-
-.team .member .member-info {
-  margin-top: 30px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 6px;
-  font-size: 18px;
-  color: var(--color-secondary);
-}
-
-.team .member .member-info span {
-  font-style: italic;
-  display: block;
-  font-size: 15px;
-  color: #838893;
-  margin-bottom: 10px;
-}
-
-.team .member .member-info p {
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.team .member:hover .member-img .social {
-  padding-bottom: 0;
-  visibility: visible;
-  opacity: 1;
-}
-
 /*--------------------------------------------------------------
 # Servie Cards Section
 --------------------------------------------------------------*/
@@ -1659,17 +1578,25 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+  }
+}
 .hero .carousel {
-  width: 100%;
-  min-height: 100vh;
-  padding: 80px 0;
-  margin: 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .hero .carousel-item {
