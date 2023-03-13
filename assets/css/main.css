@@ -437,7 +437,7 @@ section {
     top: 0;
     right: -100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     bottom: 0;
     transition: 0.3s;
     z-index: 9997;
@@ -447,7 +447,7 @@ section {
     position: absolute;
     inset: 0;
     padding: 50px 0 10px 0;
-    margin: 0;
+    margin: 15px;
     background: rgba(0, 0, 0, 0.8);
     overflow-y: auto;
     transition: 0.3s;
